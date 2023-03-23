@@ -9,7 +9,7 @@ export default async function (req, res){
    req.body = JSON.parse(Buffer.concat(buffers).toString())
   } catch{
    req.body = null
-  }
+  } 
   res
     .setHeader('Content-type', 'application/json')
 }
